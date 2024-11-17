@@ -1,0 +1,8 @@
+pyaudio
+numpy
+openai-whisper
+groq
+elevenlabs
+websockets
+playsound==1.2.2
+pydub
