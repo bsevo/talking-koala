@@ -1,18 +1,24 @@
 # Talking Koala
 
-[Demo](https://youtu.be/sjhLlgn_NK4)
+[YT Demo Video](https://youtu.be/sjhLlgn_NK4)
 
-We wanted to have a toy we can play with together with our kids when kids want that we tell them a story (e.g. before going to bed).
-Toy needs to be fun, be creative and spark interest in kids for technology. At the same time, there should be no screen to which kids will stare.
-As a form of protection, we used Llama guard rails, for question and response.
+An interactive, screen-free smart toy that tells AI-generated bedtime stories while keeping children safe through content moderation.
 
-# How we did
+# Tech Stack 
+- [M5Stack Core 2](https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit?srsltid=AfmBOooeX2IEIAfY55qHhm9GF2HbXkUpD46qQuF5tvjUqDMXEVCNNbaR) embedded in koala toy
+- Whisper model for speech-to-text
+- Llama Guard for content moderation
+- Llama 3.2 for story generation
+- Eleven Labs for text-to-speech
+- Groq for AI model hosting
 
-1. esp32 microcontroller (low power, WiFi, mic, speaker) is put into Koala toy. 
-2. Koala listens the question and sends it to the server.
-3. Server transribes the audio using Whisper.
-4. Text is checked using Llama Guards. We used the model hosted by Groq.
-5. Kids story is generated using Llama hosted by Groq.
-6. Response is checked using Llama Guards.
-7. Audio response is generated using Eleven Labs.
-8. Audio is streamed back to Koala and played back by Koala.
+# How it works
+
+- Core 2 device in the koala captures audio input
+- Audio is sent to server via WiFi
+- Whisper transcribes audio to text
+- Llama Guard validates input for safety
+- Llama generates an age-appropriate story
+- Llama Guard reviews generated content
+- Eleven Labs converts story to speech
+- Audio streams back to koala for playback
