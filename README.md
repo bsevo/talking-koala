@@ -4,7 +4,10 @@
 
 An interactive, screen-free smart toy that tells AI-generated bedtime stories while keeping children safe through content moderation.
 
-# Tech Stack 
+![Screenshot of the talking koala](demo.jpg)
+
+# Tech Stack
+
 - [M5Stack Core 2](https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit?srsltid=AfmBOooeX2IEIAfY55qHhm9GF2HbXkUpD46qQuF5tvjUqDMXEVCNNbaR) embedded in koala toy
 - Whisper model for speech-to-text
 - Llama Guard for content moderation
