@@ -1,5 +1,7 @@
 # Talking Koala
 
+[Demo](https://youtu.be/sjhLlgn_NK4)
+
 We wanted to have a toy we can play with together with our kids when kids want that we tell them a story (e.g. before going to bed).
 Toy needs to be fun, be creative and spark interest in kids for technology. At the same time, there should be no screen to which kids will stare.
 As a form of protection, we used Llama guard rails, for question and response.
